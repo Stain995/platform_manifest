@@ -15,6 +15,9 @@
            review="gerrit.aicp-rom.com"
            revision="refs/heads/n7.1" />
 
+  <remote  name="gith"
+           fetch="https://github.com/" />
+
   <remote name="slim"
            fetch="https://github.com/"
            review="gerrit.slimroms.net" />
@@ -505,6 +508,10 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" />
   <project path="tools/test/connectivity" name="platform/tools/test/connectivity" remote="aosp" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" remote="aosp" />
+
+  <!-- Symphony P6 support -->
+  <project path="device/Symphony/P6" name="Stain995/android_device_Symphony_P6" remote="gith" revision="AICP" />
+  <project path="vendor/Symphony/P6" name="a7raj/android_vendor_Symphony_P6" remote="gith" revision="los-14.1" />
 
   <include name="snippets/aicp.xml" />
 
